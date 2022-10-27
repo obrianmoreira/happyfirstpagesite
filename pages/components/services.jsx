@@ -8,7 +8,7 @@ const Services = () => {
     return (
         <div className='px-[30px]'>
             <div className='lg:pt-3 text-center'>
-                <h1 className='text-[40px] md:text-[60px]'>
+                <h1 className='text-[40px] md:text-[60px] test-black'>
                     Services
                 </h1>
                 <p className='text-[19px] md:text-[24px] lg:text-[20px] mt-4 font-light text-slate-800'>
