@@ -56,11 +56,11 @@ export const Offer = ({offerTitle, offerParag, offerButton}) => {
     return (
 
         <div>
-            <h2 className='text-[40px] lg:text-[70px]'>{offerTitle}</h2>
+            <h2 className='text-[40px] lg:text-[70px] text-black'>{offerTitle}</h2>
             <p className='text-[19px] md:text-[24px] lg:text-[20px] mb-5 font-light text-black'>
                 {offerParag}
             </p>
-            <button className='px-8 py-2 rounded border border-black hover:bg-slate-800 hover:text-white'>{offerButton}</button>
+            <button className='px-8 py-2 rounded border border-black hover:bg-slate-800 hover:text-white text-black'>{offerButton}</button>
             <div className='mt-[50px]'>
                 <hr className='border-black'/>
             </div>
@@ -78,7 +78,7 @@ export const FooterFirst = ({bellowLogoParag}) => {
                 widthLogo={150}
                 heightLogo={100}
             />
-            <h2 className='font-light'>{bellowLogoParag}</h2>
+            <h2 className='font-light text-black'>{bellowLogoParag}</h2>
         </div> 
     )
 }
@@ -89,7 +89,7 @@ export const FooterInfo = ({footerTitle, footerInfoOne, footerInfoTwo, footerInf
 
         <div>
            <h2 className='text-black text-[30px] mb-3'>{footerTitle}</h2>
-           <div className='underline'>
+           <div className='underline font-light text-black'>
                 <p className='lg:mb-2'>{footerInfoOne}</p>
                 <p className='lg:mb-2'>{footerInfoTwo}</p>
                 <p className='lg:ml-[18px]'>{footerInfoThree}</p>
@@ -106,7 +106,7 @@ export const FooterInfoLink = ({footerTitle, footerInfoOne, footerInfoTwo, foote
 
         <div>
            <h2 className='text-black text-[30px] mb-3'>{footerTitle}</h2>
-           <div className=''>
+           <div className='font-light text-black'>
                 <p><Link href="">{footerInfoOne}</Link></p>
                 <p><Link href="">{footerInfoTwo}</Link></p>
                 <p><Link href="">{footerInfoThree}</Link></p>

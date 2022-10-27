@@ -53,7 +53,7 @@ const Benefits = () => {
 export const ListHeader = ({headerTitle, headerDesc}) => {
     return(
         <div className='pt-9 lg:mr-[70px]'>
-            <h2 className='text-[35px]'>{headerTitle}</h2>
+            <h2 className='text-[35px] text-black'>{headerTitle}</h2>
             <p className='text-[20px] font-light text-slate-800'>{headerDesc}</p>
         </div>
         
@@ -64,7 +64,7 @@ export const List = ({benefitNumber, benefitTitle, benefitDesc}) => {
     return (
         <div className='lg:p-6'>
             <h2 className='text-amber-400 text-[30px] mb-3'>{benefitNumber}</h2>
-            <h2 className='text-[30px] mb-3'>{benefitTitle}</h2>
+            <h2 className='text-[30px] mb-3 text-black'>{benefitTitle}</h2>
             <p className='text-[20px] font-light text-slate-800'>{benefitDesc}</p>
         </div>
     )
