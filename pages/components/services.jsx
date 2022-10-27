@@ -58,7 +58,7 @@ export const Card = ({headtwo, headthree, pPrice, pFirstDesc, pSecDesc, pThirdDe
             </div>
             <div className='shadow-xl py-8 rounded-xl'>
                 <div className='px-2'>
-                    <p><strong className='text-[45px] text-black'>${pPrice}</strong>/pHour</p>
+                    <p className='font-light text-black'><strong className='text-[45px] text-black'>${pPrice}</strong>/pHour</p>
                     <p className='text-[18px] mt-[16px] font-light text-slate-800'>{pFirstDesc}</p>
                     <p className='text-[18px] mt-[12px] font-light text-slate-800'>{pSecDesc}</p>
                     <p className='text-[18px] mt-[12px] font-light text-slate-800'>{pThirdDesc}</p>
@@ -80,7 +80,7 @@ export const CardTwo = ({headtwo, pPrice, pFirstDesc, pSecDesc, pThirdDesc}) => 
             </div>
             <div className='shadow-xl py-8 rounded-xl'>
                 <div className='px-2'>
-                    <p><strong className='text-[45px] text-black'>${pPrice}</strong>/pHour</p>
+                    <p className='font-light text-black'><strong className='text-[45px] text-black'>${pPrice}</strong>/pHour</p>
                     <p className='text-[18px] mt-[16px] font-light text-slate-800'>{pFirstDesc}</p>
                     <p className='text-[18px] mt-[12px] font-light text-slate-800'>{pSecDesc}</p>
                     <p className='text-[18px] mt-[12px] font-light text-slate-800'>{pThirdDesc}</p>
