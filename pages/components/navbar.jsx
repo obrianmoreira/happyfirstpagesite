@@ -1,31 +1,35 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import React, {useState} from 'react';
-import imageSrc from '../public/images/logo.png';
+import logo from '../images/logo.png';
 import Link from 'next/link';
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 
 const Navbar = () => {
     return (
-        <div className="fixed left-0 top-0 w-full ease-in duration-300 bg-amber-400 p-3 px-[120px]">
+        <nav className="fixed left-0 top-0 w-full ease-in duration-300 bg-amber-400 px-[120px]">
             <div className='max-w-[1240px] m-auto flex justify-between items-center p-4'>
-                <div className='ml-[-110px] md:ml-[-80px] lg:ml-0'>
-                    <MyLogo/>
+                <div className='ml-[-110px] md:ml-[-80px] lg:ml-[-20px]'>
+                    <MyLogo
+                        imageSrc={logo}
+                        widthLogo={94}
+                        heightLogo={52}
+                    />
                 </div>
                 <div className='mr-[-100px] pt-3 md:mr-[-70px] lg:pt-0 lg:mr-0'>
                     <MyNavbarLink/>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
 
-const MyLogo = () => {
+export const MyLogo = ({imageSrc, widthLogo, heightLogo}) => {
     return (
         <Image
             src={imageSrc}
-            width={102}
-            height={52}
+            width={widthLogo}
+            height={heightLogo}
         />
     )
 }
@@ -37,7 +41,7 @@ const MyNavbarLink = () => {
     }
     return (
         <div>
-            <ul className='hidden sm:flex space-x-6 text-[22px]'>
+            <ul className='hidden sm:flex space-x-6 text-[19px]'>
                 <li className='pt-2'><Link href="/">Home</Link></li>
                 <li className='pt-2'><Link href="/">Services</Link></li>
                 <li className='pt-2'><Link href="/">Benefits</Link></li>
