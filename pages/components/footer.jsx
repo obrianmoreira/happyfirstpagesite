@@ -106,7 +106,7 @@ export const FooterInfoLink = ({footerTitle, footerInfoOne, footerInfoTwo, foote
 
         <div>
            <h2 className='text-black text-[30px] mb-3'>{footerTitle}</h2>
-           <div className='underline'>
+           <div className=''>
                 <p><Link href="">{footerInfoOne}</Link></p>
                 <p><Link href="">{footerInfoTwo}</Link></p>
                 <p><Link href="">{footerInfoThree}</Link></p>
