@@ -7,18 +7,21 @@ const Footer = () => {
 
     return (
 
-        <div>
+        <div className='text-center'>
             <div>
                 <Offer
                     offerTitle='Free First Hour'
-                    offerParag="Are you a new client thinking about doing a service with us. Let us encorage you to see our quality. We are giving you a free hour ticket. To have excess of this gift, you just have to talk with us via email or phone and shecule your first cleaning."
+                    offerParag="Are you a new client thinking about doing a service with us. Let us encorage you to see our quality. We are giving you a free hour ticket for cleanings above five hours. To have excess of this gift, you just have to talk with us via email or phone and shecule your first cleaning."
                     offerButton='Get your free hour'            
                 />
             </div>
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-10 mt-[100px]'>
+            <div className='grid grid-cols-2
+                    md:grid-cols-4 gap-10
+                    mt-[50px]
+                    '>
                 <div>
                     <FooterFirst
-                        bellowLogoParag="A cleaned house makes people Happy. © 2022 Copyright: happycleaning.com | Created by Brian Moreira"
+                        bellowLogoParag="A cleaned house makes people Happy. © 2023 Copyright: happycleaning.com | Created by Brian Moreira"
                     />
                 </div>
                 <div className='pt-6'>
@@ -55,7 +58,7 @@ export const Offer = ({offerTitle, offerParag, offerButton}) => {
 
     return (
 
-        <div>
+        <div className=''>
             <h2 className='text-[40px] lg:text-[70px] text-black'>{offerTitle}</h2>
             <p className='text-[19px] md:text-[24px] lg:text-[20px] mb-5 font-light text-black'>
                 {offerParag}

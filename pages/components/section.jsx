@@ -2,7 +2,7 @@ import React from "react";
 
 export const Section = ({secTitle, secSub, secParag}) => {
     return (
-        <div className='lg:p-[80px] text-center'>
+        <div id='layoutcss' className='lg:p-[80px] text-center'>
             <h1 className='text-white font-semibold text-[47px] md:text-[70px]'>{secTitle}</h1>
             <p className='text-[30px] md:text-[40px] mt-4'>
                 {secSub}

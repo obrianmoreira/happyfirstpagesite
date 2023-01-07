@@ -52,7 +52,7 @@ const Services = () => {
 
 export const Card = ({headtwo, headthree, pPrice, pFirstDesc, pSecDesc, pThirdDesc}) => {
     return (
-        <div className='rounded-xl border-t-4 border-gray-100 mt-11 shadow-2xl'>
+        <div className='rounded-xl border-t-4 border-gray-100 mt-11 shadow-2xl text-center'>
             <div className='shadow-lg py-5 rounded bg-slate-600'>
                 <h2 className='text-[30px] text-white'>{headtwo}</h2>
             </div>
@@ -63,9 +63,15 @@ export const Card = ({headtwo, headthree, pPrice, pFirstDesc, pSecDesc, pThirdDe
                     <p className='text-[18px] mt-[12px] font-light text-slate-800'>{pSecDesc}</p>
                     <p className='text-[18px] mt-[12px] font-light text-slate-800'>{pThirdDesc}</p>
                 </div>
-                <button className='bg-slate-600 hover:bg-amber-600 rounded py-3 px-[90px] text-white mt-8'>
+                <button
+                    className='
+                        bg-slate-600 rounded hover:bg-amber-600 hover:text-white
+                        md:py-3 md:px-[90px]
+                        px-[60px] py-[10px] mt-8
+                    '>
                     Know More
                 </button>
+                
             </div>
         </div>
     )
@@ -73,7 +79,10 @@ export const Card = ({headtwo, headthree, pPrice, pFirstDesc, pSecDesc, pThirdDe
 
 export const CardTwo = ({headtwo, pPrice, pFirstDesc, pSecDesc, pThirdDesc}) => {
     return (
-        <div className='rounded-xl border-t border-indigo-50 mt-11 shadow-xl'>
+        <div className='
+                rounded-xl border-t border-indigo-50
+                mt-11 shadow-xl text-center'>
+
             {/* Changed the heads color of the card */}
             <div className='shadow-lg py-5 rounded-t bg-amber-400'>
                 <h2 className='text-[30px]'>{headtwo}</h2>
@@ -85,7 +94,12 @@ export const CardTwo = ({headtwo, pPrice, pFirstDesc, pSecDesc, pThirdDesc}) => 
                     <p className='text-[18px] mt-[12px] font-light text-slate-800'>{pSecDesc}</p>
                     <p className='text-[18px] mt-[12px] font-light text-slate-800'>{pThirdDesc}</p>
                 </div>
-                <button className='bg-amber-400 rounded py-3 px-[90px] hover:bg-amber-600 hover:text-white mt-8'>
+                <button
+                    className='
+                        bg-amber-400 rounded hover:bg-amber-600 hover:text-white
+                        md:py-3 md:px-[90px]
+                        px-[60px] py-[10px] mt-8
+                    '>
                     Know More
                 </button>
             </div>
