@@ -32,8 +32,8 @@ export default function Layout(){
             
             <div 
                 className='
-                    bg-slate-100 h-auto
-                    lg:pl-[135px] lg:pr-[300px] lg:pt-[5px]
+                    bg-slate-100
+                    h-auto lg:pl-[135px] lg:pr-[300px] lg:pt-[5px]
                     md:px-[53px] md:pt-[120px]
                     px-[34px] pt-[165px]
                 '>
